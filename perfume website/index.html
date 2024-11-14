@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover new fragrances with Scentsational.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scentsational</title>
+</head>
+<body>
+   <section id="home_page">
+      <div class="inner_home">
+         <!-- Navigation Bars-->
+          <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/016/664/754/non_2x/perfume-logo-illustration-symbol-design-vector.jpg" alt="">
+          </div>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="team.html">Team</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+      
+      
+       <!-- Main Content-->
+      <div class="main_content">
+         <div>
+         <h1 class="Welcome">WELCOME TO <br>SCENTSATIONAL</h1>   
+         <p class="text">Immerse Yourself in Nature’s Finest. Our perfumes are crafted from the purest <br> ingredients sourced from around the world, blending nature’s beauty with your <br> individuality. Explore our enchanting fragrances now. Our exclusive fragrances <br>are designed for those who appreciate the finer things in life. Elevate your scent <br>experience and indulge in elegance.</p>
+         
+      </div>
+      <div>
+         <div class="picture">
+            <img src="https://media.istockphoto.com/id/485344712/photo/bleu-de-chanel-fragrance-for-men.jpg?s=612x612&w=0&k=20&c=4hJRd76EUUPjz2lvs_9kxKKh-IDBMQobZ-1x-dLyq6s=" alt="colgne" >
+         </div>
+      </div>
+      </div>
+      <div class="center">
+         <button type="button" class="pop-btn">Subscribe Now!!</button>
+     </div>
+
+      <div class="modal-parent">
+         <div class="modal">
+            
+            <form>
+               <h2 style="margin-bottom: 1rem;">Please subscribe to our latest news!!</h2>
+               <input type="email" placeholder="Your email address">
+               <input type="submit" value="Subscribe">
+             </form>
+            
+            <span class="x" draggable="true">&times;</span>
+         </div>
+      </div>
+    </div> 
+   </section>
+   
+   <script>
+      var parent = document.querySelector(".modal-parent"),
+    btn = document.querySelector(".pop-btn"),
+    X = document.querySelector(".x"),
+    section = document.querySelector("section");
+
+btn.addEventListener("click", appear);
+
+function appear() {
+    parent.style.display = "block";
+    section.style.filter = "blu(0)"
+}
+X.addEventListener("click", disappearX);
+function disappearX() {
+    parent.style.display = "none";
+    section.style.filter = "blur(0px)"
+}
+parent.addEventListener("click", disappearParent)
+function disappearParent(e) {
+    if (e.target.className == "modal-parent") {
+        parent.style.display = "none";
+        section.style.filter = "blur(0px)"
+    }
+}
+   </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover new fragrances with Scentsational.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scentsational</title>
+</head>
+<body>
+   <section id="about_page">
+      <div class="inner_home">
+         <!-- Navigation Bars-->
+          <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/016/664/754/non_2x/perfume-logo-illustration-symbol-design-vector.jpg" alt="">
+          </div>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="team.html">Team</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </header> 
+
+       <!-- Main Content-->
+       <div class="wrapper">
+         <div class="about_column">
+            <div class="column_rows">
+               <h1>Get To Know Us!!</h1>
+               <p>Welcome to SCENTSATIONAL, where the art of fragrance transcends the ordinary and invites you on a sensory journey. We believe that a scent is not just a fragrance; it is a powerful storyteller that evokes cherished memories, ignites passions, and expresses the essence of who you are. Each of our perfumes is a carefully crafted masterpiece, blending the finest ingredients sourced from around the globe. <br><br> With every spritz, we aim to transport you to a world of elegance and allure, where every scent captures a moment and every bottle holds a story waiting to be discovered. This version aims to create a more immersive experience for the reader, inviting them to connect emotionally with your brand. Let me know if you’d like further adjustments or additional sections!</p>
+               <p>With every spritz, we aim to transport you to a world of elegance and allure, where every scent captures a moment and every bottle holds a story waiting to be discovered. This version aims to create a more immersive experience for the reader, inviting them to connect emotionally with your brand. Let me know if you’d like further adjustments or additional sections! </p>
+               <!---->
+               
+            </div>
+            <!-- Second Column-->
+            <div class="column_rows">
+               <img src="https://dynamic.zacdn.com/o8fFaZyCAeEUecroIqpJE2NwABE=/filters:quality(70):format(webp)/https://static-my.zacdn.com/p/dior-9452-3298303-3.jpg" alt="">
+               </div>
+         </div>
+         <!--BUTTON-->
+         <div class="center">
+            <button type="button" class="pop-btn">Read More!!</button>
+        </div>
+   
+         <div class="modal-parent">
+            <div class="modal">
+               <p>Founded in 2018, SCENTSATIONAL began with a simple vision: to create natural, evocative fragrances that capture memories and emotions. Inspired by global botanical landscapes, our founders traveled far and wide to source the finest ingredients. From a small family-run project, we have grown into a brand known for purity, quality, and sustainability.
+                  Each SCENTSATIONAL perfume is handcrafted in small batches, blending centuries-old techniques with modern innovation. Our dedication to ethical sourcing and cruelty-free production sets us apart, allowing us to craft scents that are as mindful as they are luxurious. Today, SCENTSATIONAL is a community of scent enthusiasts, united by a love for authentic, enduring fragrances.</p>     
+               <img src="https://www.arcstore.co.za/Admin/Public/GetImage.ashx?Width=800&Height=800&Crop=5&DoNotUpscale=True&FillCanvas=True&Image=/Files/Images/Ecom/Brands/ABC/CHANEL/111144_200ML_A.jpg&AlternativeImage=/Images/missing_image.jpg" alt="perfume">
+               <span class="x" draggable="true">&times;</span>
+            </div>
+         </div>
+      <section class="columns">
+         
+         <div class="column">
+            <h2>Vision</h2>
+            <p>Our vision is to be a leading name in the fragrance industry, recognized for our commitment to quality, creativity, and sustainability. We aspire to inspire a global community of fragrance lovers who appreciate the art of perfumery and the power of scent to transform everyday moments into extraordinary experiences.</p>
+         </div>
+         
+         <div class="column">
+            <h2>Mission</h2>
+            <p>At SCENTSATIONAL, our mission is to create exquisite perfumes that empower individuals to express their true selves. We strive to blend tradition with innovation, ensuring that every bottle tells a story and every scent captures a moment. We are committed to sustainability, using ethically sourced materials and eco-friendly practices to protect our planet while delivering luxury.</p>
+         </div>
+        
+        <div class="column">
+            <h2>Values</h2>
+            <p>At SCENTSATIONAL, we are guided by core values that shape our identity. We embrace Artistry in every fragrance we create, celebrating the beauty of perfumery. Our commitment to Sustainability ensures responsible sourcing and eco-friendly practices. We champion Authenticity, encouraging individuality through our unique scents. Quality is paramount, as we select only the finest ingredients and deliver impeccable packaging. Lastly, we foster a sense of Community among fragrance enthusiasts, valuing customer feedback and celebrating the shared love of scent.</p>
+         </div>
+             
+      </section>	
+      </div>
+    </div> 
+   </section>
+
+   
+   
+
+   
+   <script>
+      var parent = document.querySelector(".modal-parent"),
+    btn = document.querySelector(".pop-btn"),
+    X = document.querySelector(".x"),
+    section = document.querySelector("section");
+
+btn.addEventListener("click", appear);
+
+function appear() {
+    parent.style.display = "block";
+    section.style.filter = "blu(0)"
+}
+X.addEventListener("click", disappearX);
+function disappearX() {
+    parent.style.display = "none";
+    section.style.filter = "blur(0px)"
+}
+parent.addEventListener("click", disappearParent)
+function disappearParent(e) {
+    if (e.target.className == "modal-parent") {
+        parent.style.display = "none";
+        section.style.filter = "blur(0px)"
+    }
+}
+   </script>
+</body>
+</html>
